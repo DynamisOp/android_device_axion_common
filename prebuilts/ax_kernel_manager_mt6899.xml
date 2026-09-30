@@ -41,5 +41,5 @@
         currentNode="/sys/devices/platform/soc/13000000.mali/devfreq/13000000.mali/cur_freq"
         usageNode="/sys/kernel/ged/hal/gpu_boost_level"
         frequencyMultiplier="1"
-        values="300000000,500000000,700000000,900000000,1000000000,1200000000" />
+        values="260000000,520000000,702000000,910000000,1040000000,1300000000" />
 </kernel-manager>

@@ -25,12 +25,12 @@ on post-fs-data
     chmod 0664 /sys/devices/system/cpu/cpufreq/policy4/sugov_ext/down_rate_limit_us
     chmod 0664 /sys/devices/system/cpu/cpufreq/policy7/sugov_ext/down_rate_limit_us
 
-    write /sys/devices/system/cpu/cpufreq/policy0/sugov_ext/up_rate_limit_us
-    write /sys/devices/system/cpu/cpufreq/policy4/sugov_ext/up_rate_limit_us
-    write /sys/devices/system/cpu/cpufreq/policy7/sugov_ext/up_rate_limit_us
-    write /sys/devices/system/cpu/cpufreq/policy0/sugov_ext/down_rate_limit_us
-    write /sys/devices/system/cpu/cpufreq/policy4/sugov_ext/down_rate_limit_us
-    write /sys/devices/system/cpu/cpufreq/policy7/sugov_ext/down_rate_limit_us
+    write /sys/devices/system/cpu/cpufreq/policy0/sugov_ext/up_rate_limit_us 0
+    write /sys/devices/system/cpu/cpufreq/policy4/sugov_ext/up_rate_limit_us 0
+    write /sys/devices/system/cpu/cpufreq/policy7/sugov_ext/up_rate_limit_us 0 
+    write /sys/devices/system/cpu/cpufreq/policy0/sugov_ext/down_rate_limit_us 0
+    write /sys/devices/system/cpu/cpufreq/policy4/sugov_ext/down_rate_limit_us 0
+    write /sys/devices/system/cpu/cpufreq/policy7/sugov_ext/down_rate_limit_us 0 
 
     chown system system /sys/class/thermal/thermal_message/boost
     chmod 0664 /sys/class/thermal/thermal_message/boost
